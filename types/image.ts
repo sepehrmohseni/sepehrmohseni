@@ -2,6 +2,6 @@ export interface ImageProps {
     alt: string;
     height: number;
     likes: number;
-    src: string;
+    src: any;
     width: number;
 }

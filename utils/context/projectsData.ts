@@ -5,6 +5,10 @@ import { ImageProps } from '../../types/image';
 import { ProjectCategory } from '../../types/category';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faReact } from '@fortawesome/free-brands-svg-icons';
+import homeSc from "../../public/projects/roseGol/roseGolScreenshot.jpg";
+import prdSc from "../../public/projects/roseGol/singleProductScreenshot.jpg";
+import ordSc from "../../public/projects/roseGol/roseGolOrderdetail.jpg";
+
 
 export interface ProjectDetails {
     category: ProjectCategory[];
@@ -54,21 +58,21 @@ const projectsData: Project[] = [
                 width: 6000,
                 height: 4000,
                 likes: 42,
-                src: '/projects/rosegol/roseGolScreenshot.jpg',
+                src: homeSc,
             },
             {
                 alt: 'screenshot of single product page with add to shopping cart',
                 width: 6000,
                 height: 4000,
                 likes: 59,
-                src: '/projects/rosegol/singleProductScreenshot.jpg',
+                src: prdSc,
             },
             {
                 alt: 'screenshot of order details page with delivery and polls and location and shop information',
                 width: 6000,
                 height: 4000,
                 likes: 34,
-                src: '/projects/rosegol/roseGolOrderdetail.jpg',
+                src: ordSc,
             },
 
         ],

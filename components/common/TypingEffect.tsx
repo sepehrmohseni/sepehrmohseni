@@ -9,7 +9,7 @@ import styles from '../../styles/TypingEffect.module.css';
 
 const TypingEffect: React.FunctionComponent<TypingEffectProps> = (props) => {
   const {
-    eraseDelay = 2000,
+    eraseDelay = 1000,
     eraseSpeed = 100,
     speed = 200,
     typingDelay = 150,
