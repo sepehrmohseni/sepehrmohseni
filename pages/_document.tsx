@@ -9,12 +9,8 @@ import { createEmotionCache } from '../utils/settingHandlers';
 export default class MyDocument extends Document {
   render() {
     return (
-      <Html lang='en'>
+      <Html lang='fa' dir="rtl">
         <Head>
-          <link
-            rel='stylesheet'
-            href='https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap'
-          />
           <link rel='shortcut icon' href='/favicon.ico' />
           <link rel='icon' type='image/png' href='/favicon.png' />
           <link rel='apple-touch-icon' href='/favicon.png' />

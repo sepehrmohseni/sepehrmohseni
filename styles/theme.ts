@@ -1,5 +1,6 @@
 import { createTheme } from '@mui/material/styles';
 import { grey, indigo, deepOrange, cyan } from '@mui/material/colors';
+import { faIR } from '@mui/material/locale';
 
 export const theme = createTheme({
     palette: {
@@ -34,5 +35,8 @@ export const theme = createTheme({
     },
     shape: {
         borderRadius: 15,
-    }
-});
+    },
+    typography: {
+        fontFamily: 'Vazir',
+    },
+}, faIR);

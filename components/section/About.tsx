@@ -131,7 +131,7 @@ const About: React.FunctionComponent<AboutProps> = (props) => {
                 fontWeight='bold'
                 color='secondary'
               >
-                Who Am I?
+                من کی هستم؟
               </Typography>
               <CardContent>
                 <Typography component='p' variant='body1'>

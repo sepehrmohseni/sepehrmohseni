@@ -24,33 +24,46 @@ const NameLogo: React.FunctionComponent<NameLogoProps> = (props) => {
     <div
       onClick={onClick && onClick}
       style={{
-        alignItems: 'center',
-        cursor: 'pointer',
-        display: 'flex',
-        flexDirection: 'row',
-        justifyContent: 'center',
-        position: 'relative',
-        width: 'fit-content',
+        // alignItems: 'center',
+        // cursor: 'pointer',
+        // display: 'flex',
+        // flexDirection: 'row',
+        // justifyContent: 'center',
+        //  position: 'relative',
+        // width: 'fit-content',
+        display: "flex",
+        justifyContent: "flex-end",
+        alignItems: "center",
+        position: "absolute",
+        left: 10,
       }}
     >
       <div
         style={{
-          alignItems: 'center',
+          // alignItems: 'center',
+          // backgroundColor: bgColor,
+          // borderRadius: bgBorder,
+          // display: 'flex',
+          // height: 30,
+          // width: 30,
+          width: 30,
+          height: 30,
           backgroundColor: bgColor,
           borderRadius: bgBorder,
-          display: 'flex',
-          height: 30,
-          width: 30,
+          marginLeft: -160
         }}
       />
       <p
         style={{
+          // color,
+          // fontSize,
+          // fontWeight: 'bold',
+          // left: 10,
+          // position: 'absolute',
+          // whiteSpace: 'nowrap',
           color,
           fontSize,
           fontWeight: 'bold',
-          left: 10,
-          position: 'absolute',
-          whiteSpace: 'nowrap',
         }}
       >
         {name}

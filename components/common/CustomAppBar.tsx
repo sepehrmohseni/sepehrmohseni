@@ -17,6 +17,7 @@ import {
   ToolbarProps,
   styled,
   useTheme,
+  Grid,
 } from '@mui/material';
 import { grey } from '@mui/material/colors';
 
@@ -30,8 +31,9 @@ import ComponentsContext from '../../utils/context/componentsContext';
 interface CustomAppBarProps {}
 
 const CustomAppBarRoot = styled(AppBar)<AppBarProps>(({ theme }) => ({
-  backgroundColor: 'transparent',
+  // backgroundColor: 'transparent',
   boxShadow: 'none',
+  backgroundColor: theme.palette.background.default
 }));
 
 const LinkContainer = styled(Box)<BoxProps>(({ theme }) => ({
@@ -89,6 +91,7 @@ const CustomAppBar: React.FunctionComponent<CustomAppBarProps> = (props) => {
               name='sepehrmohseni.com'
               onClick={() => router.push('/')}
             />
+
             <LinkContainer sx={{ marginLeft: 'auto' }}>
               <LinksBox>
                 {navLinks?.map((navLink, index) => (
@@ -149,7 +152,10 @@ const CustomAppBar: React.FunctionComponent<CustomAppBarProps> = (props) => {
                     >
                       {navLink.Icon}
                     </ListItemIcon>
-                    <ListItemText primary={navLink.label} />
+                    <ListItemText
+                      sx={{ textAlign: 'right' }}
+                      primary={navLink.label}
+                    />
                   </ListItemButton>
                 </Grow>
               ))}
