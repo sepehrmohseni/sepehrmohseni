@@ -11,7 +11,7 @@
   :global(.swiper-button-disabled) {
     opacity: 0.5;
   }
-  :global(.swiper-pagination-bullet-active) {
-    background-color: white;
+  :global(.swiper-pagination-bullet) {
+    background-color: rgb(241, 113, 9);
   }
 }

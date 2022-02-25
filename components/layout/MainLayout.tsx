@@ -21,6 +21,9 @@ const MainLayout: React.FunctionComponent<MainLayoutProps> = (props) => {
           {pageData.description && (
             <meta name='description' content={pageData.description} />
           )}
+          {pageData.keywords && (
+            <meta name='keywords' content={pageData.keywords} />
+          )}
         </Head>
       )}
       <CustomAppBar />

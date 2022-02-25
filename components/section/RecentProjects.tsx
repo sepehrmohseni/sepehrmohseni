@@ -48,18 +48,17 @@ const RecentProjects: React.FunctionComponent<RecentProjectsProps> = (
         {projects ? (
           projects.map((project, index) => (
             <SwiperSlide
-              key={project.id + index}
+              key={index}
               style={{
                 transform: index === activeIndex ? 'scale(1)' : 'scale(0.75)',
                 transition: '0.2s all ease-in-out',
               }}
             >
               <ProjectCard
-                imageAlt={project.images[0].alt}
-                imageSrc={project.images[0].src}
                 title={project.title}
-                likes={calcArrayOfObj(project.images, 'likes')}
-                onButtonClick={() => router.push(`/projects/${project.id}`)}
+                url={project.url}
+                summary={project.summary}
+                stack={project.stack}
                 sx={{
                   maxWidth: '21rem',
                   marginLeft: 'auto',

@@ -135,9 +135,10 @@ const About: React.FunctionComponent<AboutProps> = (props) => {
               </Typography>
               <CardContent>
                 <Typography component='p' variant='body1'>
-                  I&apos;m a self-taught developer passionate about creating new
-                  projects. I&apos;m an Electrical Engineering graduate who is
-                  obsessed with coding.
+                  از بچگی دوس داشتم با کامپیوتر ها کار کنم. دانشجوی مهندسی
+                  الکترونیک شدم تا بیشتر با سخت افزار کامپیوتر در ارتباط باشم.
+                  بعدش برنامه نویسی به صورت حرفه ای رو خودم یادگرفتم و سراغ
+                  جاوااسکریپت رفتم چون هر چی بخوام میتونم باهاش بسازم.
                 </Typography>
                 <Collapse
                   in={showMore}
@@ -150,11 +151,11 @@ const About: React.FunctionComponent<AboutProps> = (props) => {
                   unmountOnExit
                 >
                   <Typography component='p' variant='body1'>
-                    Experienced developer interested in Front-End Development,
-                    Back-End Development and Mobile Apps Development. I code in
-                    JavaScript and TypeScript Languages. My most used frameworks
-                    are React.js / Next.js (For Front-End), Express.js (for
-                    Back-End) & React Native (for Mobile Apps).
+                    من توسعه دهنده فول استک علاقه مند به ساخت نرم افزارهای Scalabale و کاربردی هستم.
+                    برای توسعه فرانت از React.js, Next.js, Gatsby.js استفاده میکنم.
+                    برای توسعه بک اند از Node.js, Express.js, MongoDB استفاده میکنم.
+                    برای توسعه اپلیکیشن های کراس پلتفرم از React Native استفاده میکنم.
+                    گاهی نیز در صورت نیاز سری به فریمورک Electron.js میزنم.
                   </Typography>
                 </Collapse>
               </CardContent>

@@ -11,76 +11,50 @@ import ordSc from "../../public/projects/roseGol/roseGolOrderdetail.jpg";
 
 
 export interface ProjectDetails {
-    category: ProjectCategory[];
-    date: string;
-    id: string;
-    images: ImageProps[];
-    postFileName: string;
     title: string;
     stack: any;
+    summary: string;
+    url: string;
 }
 
-export interface Project extends ProjectDetails {
-    likes: number;
-}
+export interface Project extends ProjectDetails {}
 
 const ProjectConstructor = (props: ProjectDetails): Project => {
-    const { category, date, id, images, postFileName, title, stack } = props;
+    const { title, stack, summary, url } = props;
 
     return {
-        category,
-        date,
-        id,
         title,
-        images,
-        postFileName,
+        summary,
+        url,
         stack,
-        get likes() {
-            let totalLikes = 0;
-            if (this.images.length === 0) return 0;
-
-            this.images.forEach((image) => (totalLikes += image.likes));
-            return totalLikes;
-        },
     };
 };
 
 const projectsData: Project[] = [
     ProjectConstructor({
-        category: ['Next', 'React'],
-        date: "2020 - 2021",
-        id: 'rosegol',
-        postFileName: 'rosegol',
         title: 'رزگل',
-        images: [
-            {
-                alt: 'screenshot of home page of products with flowers',
-                width: 6000,
-                height: 4000,
-                likes: 42,
-                src: homeSc,
-            },
-            {
-                alt: 'screenshot of single product page with add to shopping cart',
-                width: 6000,
-                height: 4000,
-                likes: 59,
-                src: prdSc,
-            },
-            {
-                alt: 'screenshot of order details page with delivery and polls and location and shop information',
-                width: 6000,
-                height: 4000,
-                likes: 34,
-                src: ordSc,
-            },
-
-        ],
-        stack: [
-            'react',
-        ]
+        summary: "وب اپلیکیشن فروشگاهی",
+        url: "https://rosegol.app",
+        stack: ['JavaScript', 'Next.js']
     }),
-
+    ProjectConstructor({
+        title: 'رزاسافت',
+        summary: "پنل مدیریتی رستوران",
+        url: "https://rosa.sepanodp.com",
+        stack: ['JavaScript', 'React.js']
+    }),
+    ProjectConstructor({
+        title: 'شیپ نو',
+        summary: "وب اپلیکیشن حمل و نقل",
+        url: "https://app.shipnow.ir",
+        stack: ['JavaScript', 'Next.js']
+    }),
+    ProjectConstructor({
+        title: 'Sepehr Mohseni',
+        summary: "وبسایت شخصی",
+        url: "https://sepehrmohseni.com",
+        stack: ['TypeScript', 'Next.js']
+    }),
 ];
 
 export default projectsData;

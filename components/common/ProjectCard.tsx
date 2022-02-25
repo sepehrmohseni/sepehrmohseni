@@ -19,7 +19,8 @@ import {
   Typography,
   styled,
   useTheme,
-  Grid
+  Grid,
+  CardHeader,
 } from '@mui/material';
 import ChevronLeftIcon from '@mui/icons-material/ChevronLeft';
 import FavoriteIcon from '@mui/icons-material/Favorite';
@@ -34,11 +35,10 @@ import {
 import CustomButton from './CustomButton';
 
 interface ProjectCardProps extends CardProps {
-  imageAlt: string;
-  imageSrc: string;
   title: string;
-  likes: number;
-  onButtonClick?: () => void;
+  url?: string;
+  summary?: string;
+  stack: any;
 }
 
 const CustomCard = styled(Card)<CardProps>(({ theme }) => ({
@@ -64,8 +64,7 @@ const ImageContainer = styled(Box)<BoxProps>(({ theme }) => ({
 }));
 
 const ProjectCard: React.FunctionComponent<ProjectCardProps> = (props) => {
-  const { imageAlt, imageSrc, likes, title, onButtonClick, ...otherProps } =
-    props;
+  const { title, url, summary, stack, ...otherProps } = props;
   const [isLoaded, setIsLoaded] = React.useState(false);
   const {
     palette: { primary },
@@ -73,68 +72,55 @@ const ProjectCard: React.FunctionComponent<ProjectCardProps> = (props) => {
 
   return (
     <CustomCard {...otherProps}>
-      <ImageContainer>
-        <Image
-          alt={imageAlt}
-          src={imageSrc}
-          layout='fill'
-          objectFit='cover'
-          objectPosition='top center'
-          onLoad={() => setIsLoaded(true)}
-          quality={30}
-        />
-        {!isLoaded && (
-          <Skeleton
-            variant='rectangular'
-            sx={{ backgroundColor: primary.main, height: '100%' }}
-          />
-        )}
-      </ImageContainer>
-      <CardContent>
-        <Typography component='h3' variant='h6' textAlign='center'>
-          {isLoaded ? (
-            title
-          ) : (
-            <Skeleton sx={{ backgroundColor: primary.main }} />
-          )}
-        </Typography>
-      </CardContent>
+      <CardHeader
+        title={
+          <Typography
+            gutterBottom
+            component='h1'
+            variant='h5'
+            textAlign='center'
+          >
+            {title}
+          </Typography>
+        }
+        subheader={
+          <Typography
+            color='primary.light'
+            component='h3'
+            variant='subtitle1'
+            fontWeight='bold'
+            textAlign='center'
+          >
+            {summary}
+          </Typography>
+        }
+      />
       <CardActions disableSpacing>
-        <List>
-          <ListItem>
-            <ListItemIcon sx={{ minWidth: 'auto', marginRight: '0.5rem' }}>
-
-              {/* <Icon color='primary' sx={{ display: 'flex' }}>
-                <FontAwesomeIcon
-                  icon={faReact}
-                  style={{
-                    color: '#61DAFB',
-                    fontSize: '1rem',
-                  }}
-                />
-              </Icon> */}
-            </ListItemIcon>
-            <ListItemText>
-              {isLoaded ? null : (
-                <Skeleton
-                  sx={{ backgroundColor: primary.main, width: '2rem' }}
-                />
-              )}
-            </ListItemText>
-          </ListItem>
-        </List>
-        <Grid container justifyContent="flex-end">
-<CustomButton
-          disableRipple
-          variant='contained'
-          color='primary'
-          onClick={onButtonClick}
-          startIcon={<ChevronLeftIcon />}
-        >
-          &nbsp;جزئیات بیشتر
-        </CustomButton>
+        <Grid container justifyContent='space-between'>
+          <div
+          >
+            {stack.map((item: any, index: any) => (
+              <Typography
+                key={index}
+                variant='subtitle2'
+                color='secondary.light'
+              >
+                {item}
+              </Typography>
+            ))}
+          </div>
+          <CustomButton
+          size="small"
+            disableRipple
+            variant='contained'
+            color='primary'
+            onClick={() => {
+              window.open(url, '_blank');
+            }}
+          >
+            &nbsp;جزئیات بیشتر
+          </CustomButton>
         </Grid>
-        
       </CardActions>
     </CustomCard>
   );

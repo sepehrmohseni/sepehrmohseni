@@ -19,12 +19,10 @@ interface EmailIconLinkProps extends IconButtonProps {
   iconSize?: 'inherit' | 'large' | 'medium' | 'small' | undefined;
 }
 
-const EmailIconLink: React.FunctionComponent<EmailIconLinkProps> = (
-  props
-) => {
+const EmailIconLink: React.FunctionComponent<EmailIconLinkProps> = (props) => {
   const {
     anchorStyles,
-    href = 'mailto:sepmoh.97@gmail.com',
+    href = 'mailto:sepehr.work@outlook.com',
     iconColor = 'inherit',
     iconSize = 'inherit',
     ...otherProps

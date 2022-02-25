@@ -1,6 +1,7 @@
 export interface Page {
   title?: string;
   description?: string;
+  keywords?: string;
 }
 
 export interface Pages {
@@ -9,19 +10,11 @@ export interface Pages {
 
 const pages: Pages = {
   home: {
-    title: 'Sepehr Mohseni - Software Engineer',
+    title: 'سپهر محسنی - مهندس نرم افزار',
     description:
-      'Sepehr Mohseni is a full-stack software engineer with a passion for building scalable, maintainable and performant software.',
-  },
-  projects: {
-    title: 'Projects',
-    description:
-      'You can see all my projects as a full-stack developer in this page.',
-  },
-  hireMe: {
-    title: 'Hire me',
-    description:
-      'I am available as freelancer to do your projects, fill the form to contact to me.',
+      'من یک مهندس نرم افزار فول استک هستم که علاقه مند به ساخت نرم افزارهای مقیاس پذیر وب و موبایل هستم.',
+    keywords:
+      'نرم افزار، طراحی سایت، طراحی اپلیکیشن، ساخت وبسایت، ساخت اپلیکیشن، فول استک، فرانت اند، بک اند، اپلیکیشن',
   },
 };
 

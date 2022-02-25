@@ -38,7 +38,7 @@ const HireMe: React.FunctionComponent<HireMeProps> = (props) => {
           </Typography>
           <ButtonLink
             color='secondary'
-            href='mailto:sepmoh.97@gmail.com'
+            href='mailto:sepehr.work@outlook.com'
             size='large'
             sx={{ marginTop: '2rem' }}
             variant='contained'
