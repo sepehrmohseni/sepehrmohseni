@@ -3,7 +3,7 @@ import IconButtonLink from './IconButtonLink';
 import AlternateEmailIcon from '@mui/icons-material/AlternateEmail';
 
 import { IconButtonProps, useTheme } from '@mui/material';
-interface TwitterIconLinkProps extends IconButtonProps {
+interface EmailIconLinkProps extends IconButtonProps {
   anchorStyles?: React.CSSProperties;
   href?: string;
   iconColor?:
@@ -19,7 +19,7 @@ interface TwitterIconLinkProps extends IconButtonProps {
   iconSize?: 'inherit' | 'large' | 'medium' | 'small' | undefined;
 }
 
-const TwitterIconLink: React.FunctionComponent<TwitterIconLinkProps> = (
+const EmailIconLink: React.FunctionComponent<EmailIconLinkProps> = (
   props
 ) => {
   const {
@@ -43,4 +43,4 @@ const TwitterIconLink: React.FunctionComponent<TwitterIconLinkProps> = (
   );
 };
 
-export default TwitterIconLink;
+export default EmailIconLink;

@@ -51,7 +51,7 @@ const projectsData: Project[] = [
         date: "2020 - 2021",
         id: 'rosegol',
         postFileName: 'rosegol',
-        title: 'Rose Gol',
+        title: 'رزگل',
         images: [
             {
                 alt: 'screenshot of home page of products with flowers',
@@ -77,7 +77,7 @@ const projectsData: Project[] = [
 
         ],
         stack: [
-            'react'
+            'react',
         ]
     }),
 

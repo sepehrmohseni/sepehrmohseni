@@ -19,8 +19,9 @@ import {
   Typography,
   styled,
   useTheme,
+  Grid
 } from '@mui/material';
-import ChevronRightIcon from '@mui/icons-material/ChevronRight';
+import ChevronLeftIcon from '@mui/icons-material/ChevronLeft';
 import FavoriteIcon from '@mui/icons-material/Favorite';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
@@ -102,7 +103,8 @@ const ProjectCard: React.FunctionComponent<ProjectCardProps> = (props) => {
         <List>
           <ListItem>
             <ListItemIcon sx={{ minWidth: 'auto', marginRight: '0.5rem' }}>
-              <Icon color='primary' sx={{ display: 'flex' }}>
+
+              {/* <Icon color='primary' sx={{ display: 'flex' }}>
                 <FontAwesomeIcon
                   icon={faReact}
                   style={{
@@ -110,7 +112,7 @@ const ProjectCard: React.FunctionComponent<ProjectCardProps> = (props) => {
                     fontSize: '1rem',
                   }}
                 />
-              </Icon>
+              </Icon> */}
             </ListItemIcon>
             <ListItemText>
               {isLoaded ? null : (
@@ -121,16 +123,18 @@ const ProjectCard: React.FunctionComponent<ProjectCardProps> = (props) => {
             </ListItemText>
           </ListItem>
         </List>
-        <CustomButton
+        <Grid container justifyContent="flex-end">
+<CustomButton
           disableRipple
-          variant='text'
-          color='inherit'
+          variant='contained'
+          color='primary'
           onClick={onButtonClick}
-          sx={{ marginLeft: 'auto' }}
-          endIcon={<ChevronRightIcon />}
+          startIcon={<ChevronLeftIcon />}
         >
-          more
+          &nbsp;جزئیات بیشتر
         </CustomButton>
+        </Grid>
+        
       </CardActions>
     </CustomCard>
   );

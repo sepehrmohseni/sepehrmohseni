@@ -72,15 +72,15 @@ const ProjectsSection: React.FunctionComponent<ProjectsSectionProps> = (
         textAlign='center'
         marginTop='20%'
       >
-        My Projects
+        پروژه های من
       </Typography>
       <Box
         color='text.secondary'
         sx={{ textAlign: 'center', marginTop: '1rem' }}
       >
         <TypingEffect
-          staticText='as a'
-          text={['Web Developer', 'Mobile App Developer']}
+          staticText='به عنوان برنامه نویس'
+          text={['فرانت-اند', 'بک-اند', 'اپلیکیشن موبایل', 'فول استک']}
         />
       </Box>
       <Filter onOptionClick={handleFilterOptionClick} options={options} />

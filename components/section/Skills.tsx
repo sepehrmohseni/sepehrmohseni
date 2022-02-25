@@ -102,7 +102,7 @@ const Skills: React.FunctionComponent<SkillsProps> = (props) => {
     <>
       <CustomContainer id='skills' maxWidth={containerMaxWidth}>
         <Typography component='h2' variant='h4' textAlign='center'>
-          My Skills
+          توانایی ها
         </Typography>
         <ContainerGrid marginTop='2rem'>
           {skills.map((skill, index) => (

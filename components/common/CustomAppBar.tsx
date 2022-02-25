@@ -31,9 +31,9 @@ import ComponentsContext from '../../utils/context/componentsContext';
 interface CustomAppBarProps {}
 
 const CustomAppBarRoot = styled(AppBar)<AppBarProps>(({ theme }) => ({
-  // backgroundColor: 'transparent',
+  backgroundColor: 'transparent',
   boxShadow: 'none',
-  backgroundColor: theme.palette.background.default
+  // backgroundColor: theme.palette.background.default
 }));
 
 const LinkContainer = styled(Box)<BoxProps>(({ theme }) => ({
@@ -81,7 +81,7 @@ const CustomAppBar: React.FunctionComponent<CustomAppBarProps> = (props) => {
   } = useTheme();
 
   return (
-    <>
+    <Box sx={{flexGrow: 1}}>
       <CustomAppBarRoot position='absolute' ref={appBarRef}>
         <Container maxWidth={containerMaxWidth}>
           <CustomToolbar>
@@ -163,7 +163,7 @@ const CustomAppBar: React.FunctionComponent<CustomAppBarProps> = (props) => {
           </Container>
         </Box>
       </CustomAppBarRoot>
-    </>
+    </Box>
   );
 };
 

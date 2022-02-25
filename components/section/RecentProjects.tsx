@@ -39,7 +39,7 @@ const RecentProjects: React.FunctionComponent<RecentProjectsProps> = (
           marginBottom: '3rem',
         }}
       >
-        My Recent Projects
+        پروژه های اخیر
       </Typography>
       <CustomSwiper
         onSwiper={(swiper) => setActiveIndex(swiper.activeIndex)}

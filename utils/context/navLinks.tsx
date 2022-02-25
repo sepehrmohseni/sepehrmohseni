@@ -54,7 +54,7 @@ const navLinks: NavLink[] = [
   },
   {
     buttonProps: { color: 'primary', variant: 'contained' },
-    href: '/hire-me',
+    href: '/#hireMe',
     Icon: <WorkIcon color='inherit' fontSize='inherit' />,
     label: 'تماس با من',
     order: 4,

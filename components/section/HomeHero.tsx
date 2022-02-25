@@ -17,8 +17,8 @@ const HomeHero: React.FunctionComponent<HomeHeroProps> = (props) => {
 
   return (
     <div>
-      <CenterBox flexDirection='column'>
         <ParticleComponent/>
+      <CenterBox flexDirection='column'>
         <Typography component='p' variant='h5' color='text.secondary'>
           سلام من
         </Typography>
@@ -37,7 +37,7 @@ const HomeHero: React.FunctionComponent<HomeHeroProps> = (props) => {
         <Box color='text.secondary'>
           <TypingEffect
             staticText='یک برنامه نویس'
-            text={['فرانت-اند', 'بک-اند', 'فول استک']}
+            text={['فرانت-اند', 'بک-اند', 'اپلیکیشن موبایل', 'فول استک']}
           />
         </Box>
         <ScrollDown

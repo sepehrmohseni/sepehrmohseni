@@ -71,8 +71,8 @@ const Footer: React.FunctionComponent<FooterProps> = (props) => {
         </CardContent>
       </CustomCard>
       <Typography component='p' variant='body1' textAlign='center'>
-        made with ❤️ by{' '}
-        <TextLink href='https://sepehrmohseni.com'>sep</TextLink>
+        کدنویسی با ❤️ توسط{' '}
+        <TextLink href='https://sepehrmohseni.com'>سپهر محسنی</TextLink>
       </Typography>
     </>
   );

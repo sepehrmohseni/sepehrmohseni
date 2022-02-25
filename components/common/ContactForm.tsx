@@ -37,7 +37,7 @@ const ContactForm: React.FunctionComponent<ContactFormProps> = (props) => {
       <CardHeader
         title={
           <Typography color='secondary' component='h2' variant='h5'>
-            Contact form
+            فرم تماس با من
           </Typography>
         }
         subheader={
@@ -48,7 +48,7 @@ const ContactForm: React.FunctionComponent<ContactFormProps> = (props) => {
             }}
             href='https://www.linkedin.com/in/sepehr-mohseni/'
           >
-            or Click Here
+            یا اینجا کلیک کنید
           </Link>
         }
       />
@@ -162,7 +162,7 @@ const ContactForm: React.FunctionComponent<ContactFormProps> = (props) => {
                 variant='contained'
                 disabled={true}
               >
-                Submit
+                ارسال
               </CustomButton>
             </CardActions>
           </>

@@ -31,19 +31,19 @@ const HireMe: React.FunctionComponent<HireMeProps> = (props) => {
 
   return (
     <>
-      <CustomContainerGrid>
+      <CustomContainerGrid id='hireMe'>
         <CustomGridItem item md order={{ xs: 2, md: 1 }}>
           <Typography component='h2' variant='h4' textAlign='center'>
-            I am available as freelancer.
+            خوشحال میشم اگه همکار بشیم.
           </Typography>
           <ButtonLink
-            color='primary'
-            href='/hire-me'
+            color='secondary'
+            href='mailto:sepmoh.97@gmail.com'
             size='large'
             sx={{ marginTop: '2rem' }}
             variant='contained'
           >
-            Hire me
+            به من ایمیل بزنید
           </ButtonLink>
         </CustomGridItem>
         <CustomGridItem
