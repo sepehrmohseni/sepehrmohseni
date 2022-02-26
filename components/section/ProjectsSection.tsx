@@ -29,40 +29,40 @@ const ProjectsSection: React.FunctionComponent<ProjectsSectionProps> = (
     { label: 'React Native' },
   ];
 
-  const handleFilterOptionClick = (option: FilterOption) => {
-    if (projectsToRender) {
-      const newProjectsArray: Project[] = Object.assign([], projects);
+  // const handleFilterOptionClick = (option: FilterOption) => {
+  //   if (projectsToRender) {
+  //     const newProjectsArray: Project[] = Object.assign([], projects);
 
-      switch (option.label) {
-        case 'React.js':
-          const reactProjects = newProjectsArray.filter((project) =>
-            project.category.includes('React')
-          );
-          setProjectsToRender(reactProjects);
-          break;
-        case 'Next.js':
-          const nextProjects = newProjectsArray.filter((project) =>
-            project.category.includes('Next')
-          );
-          setProjectsToRender(nextProjects);
-          break;
-        case 'Express.js':
-          const expressProjects = newProjectsArray.filter((project) =>
-            project.category.includes('Express')
-          );
-          setProjectsToRender(expressProjects);
-          break;
-        case 'React Native':
-          const reactNativeProjects = newProjectsArray.filter((project) =>
-            project.category.includes('React Native')
-          );
-          setProjectsToRender(reactNativeProjects);
-          break;
-        default:
-          break;
-      }
-    }
-  };
+  //     switch (option.label) {
+  //       case 'React.js':
+  //         const reactProjects = newProjectsArray.filter((project) =>
+  //           project.category.includes('React')
+  //         );
+  //         setProjectsToRender(reactProjects);
+  //         break;
+  //       case 'Next.js':
+  //         const nextProjects = newProjectsArray.filter((project) =>
+  //           project.category.includes('Next')
+  //         );
+  //         setProjectsToRender(nextProjects);
+  //         break;
+  //       case 'Express.js':
+  //         const expressProjects = newProjectsArray.filter((project) =>
+  //           project.category.includes('Express')
+  //         );
+  //         setProjectsToRender(expressProjects);
+  //         break;
+  //       case 'React Native':
+  //         const reactNativeProjects = newProjectsArray.filter((project) =>
+  //           project.category.includes('React Native')
+  //         );
+  //         setProjectsToRender(reactNativeProjects);
+  //         break;
+  //       default:
+  //         break;
+  //     }
+  //   }
+  // };
 
   return (
     <>
