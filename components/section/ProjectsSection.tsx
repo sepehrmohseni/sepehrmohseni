@@ -104,11 +104,14 @@ const ProjectsSection: React.FunctionComponent<ProjectsSectionProps> = (
               >
                 <Grid item xs={12} sm={6} md={4} xl={3}>
                   <ProjectCard
-                    imageAlt={project.images[0].alt}
-                    imageSrc={project.images[0].src}
+                  summary={project.summary}
+                  url={project.url}
+                  stack={project.stack}
+                    // imageAlt={project.images[0].alt}
+                    // imageSrc={project.images[0].src}
                     title={project.title}
-                    likes={calcArrayOfObj(project.images, 'likes')}
-                    onButtonClick={() => router.push(`/projects/${project.id}`)}
+                    // likes={calcArrayOfObj(project.images, 'likes')}
+                    // onButtonClick={() => router.push(`/projects/${project.id}`)}
                     sx={{
                       maxWidth: '21rem',
                       marginLeft: 'auto',
