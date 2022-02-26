@@ -83,7 +83,7 @@ const ProjectsSection: React.FunctionComponent<ProjectsSectionProps> = (
           text={['فرانت-اند', 'بک-اند', 'اپلیکیشن موبایل', 'فول استک']}
         />
       </Box>
-      <Filter onOptionClick={handleFilterOptionClick} options={options} />
+      {/* <Filter onOptionClick={handleFilterOptionClick} options={options} /> */}
       <ContainerGrid
         justifyContent={
           projectsToRender?.length === 1 ? 'center' : 'flex-start'
