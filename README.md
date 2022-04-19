@@ -1,8 +1,8 @@
 <h1 align="center">Hi 👋, I'm Sepehr Mohseni</h1>
 <h3 align="center">Senior Front-End Web Developer.</h3>
 
-- 👯 I’m looking to collaborate on **PWAs and Web Apps.** - 📫 How to reach me
-**sepmoh.97@gmail.com**
+- 👯 I’m looking to collaborate on: **PWAs and Web Apps.**
+- 📫 How to reach me: **sepmoh.97@gmail.com**
 
 <h3 align="left">Connect with me:</h3>
 <p align="left"></p>
