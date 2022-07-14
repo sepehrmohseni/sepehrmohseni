@@ -26,7 +26,7 @@ const FacebookIconLink: React.FunctionComponent<FacebookIconLinkProps> = (
 
   const {
     anchorStyles,
-    href = 'https://github.com/sepehr-mohseni',
+    href = 'https://github.com/sepehrmohseni',
     iconColor = 'inherit',
     iconSize = 'inherit',
     ...otherProps

@@ -139,6 +139,7 @@ const About: React.FunctionComponent<AboutProps> = (props) => {
                   الکترونیک شدم تا بیشتر با سخت افزار کامپیوتر در ارتباط باشم.
                   بعدش برنامه نویسی به صورت حرفه ای رو خودم یادگرفتم و سراغ
                   جاوااسکریپت رفتم چون هر چی بخوام میتونم باهاش بسازم.
+                  پشتکار بالایی دارم و در انجام وظایف خودم وسواس به خرج میدم.
                 </Typography>
                 <Collapse
                   in={showMore}
@@ -150,12 +151,7 @@ const About: React.FunctionComponent<AboutProps> = (props) => {
                   timeout='auto'
                   unmountOnExit
                 >
-                  <Typography component='p' variant='body1'>
-                    من توسعه دهنده فول استک علاقه مند به ساخت نرم افزارهای Scalabale و کاربردی هستم.
-                    برای توسعه فرانت از React.js, Next.js, Gatsby.js استفاده میکنم.
-                    برای توسعه بک اند از Node.js, Express.js, MongoDB استفاده میکنم.
-                    برای توسعه اپلیکیشن های کراس پلتفرم از React Native استفاده میکنم.
-                    گاهی نیز در صورت نیاز سری به فریمورک Electron.js میزنم.
+                  <Typography component='p' variant='body1'>من توسعه دهنده فول استک علاقه مند به ساخت نرم افزارهای Scalabale و کاربردی هستم. برای توسعه فرانت از React.js, Next.js, Gatsby.js استفاده میکنم. برای توسعه بک اند از Node.js, Express.js, MongoDB, MongoDB استفاده میکنم.
                   </Typography>
                 </Collapse>
               </CardContent>

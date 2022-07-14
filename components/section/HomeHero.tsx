@@ -37,7 +37,7 @@ const HomeHero: React.FunctionComponent<HomeHeroProps> = (props) => {
         <Box color='text.secondary'>
           <TypingEffect
             staticText='یک برنامه نویس'
-            text={['فرانت-اند', 'بک-اند', 'اپلیکیشن موبایل', 'فول استک']}
+            text={['فرانت-اند', 'بک-اند', 'فول استک']}
           />
         </Box>
         <ScrollDown

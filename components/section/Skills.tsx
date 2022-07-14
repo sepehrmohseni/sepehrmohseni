@@ -67,7 +67,7 @@ const Skills: React.FunctionComponent<SkillsProps> = (props) => {
           }}
         />
       ),
-      title: 'React.js & Next.js',
+      title: 'Front-End (React.js, Next.js, Gatsby.js)',
       progressValue: 90,
     },
     {
@@ -80,22 +80,22 @@ const Skills: React.FunctionComponent<SkillsProps> = (props) => {
           }}
         />
       ),
-      title: 'Express.js & MongoDB',
+      title: 'Back-End (Node.js, Express.js, MongoDB, MySQL)',
       progressValue: 83,
     },
-    {
-      Icon: (
-        <FontAwesomeIcon
-          icon={faAppStore}
-          style={{
-            color: '#007AFF',
-            fontSize: '2rem',
-          }}
-        />
-      ),
-      title: 'React Native',
-      progressValue: 70,
-    },
+    // {
+    //   Icon: (
+    //     <FontAwesomeIcon
+    //       icon={faAppStore}
+    //       style={{
+    //         color: '#007AFF',
+    //         fontSize: '2rem',
+    //       }}
+    //     />
+    //   ),
+    //   title: 'React Native',
+    //   progressValue: 70,
+    // },
   ];
 
   return (
