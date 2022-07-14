@@ -151,7 +151,7 @@ const About: React.FunctionComponent<AboutProps> = (props) => {
                   timeout='auto'
                   unmountOnExit
                 >
-                  <Typography component='p' variant='body1'>من توسعه دهنده فول استک علاقه مند به ساخت نرم افزارهای Scalabale و کاربردی هستم. برای توسعه فرانت از React.js, Next.js, Gatsby.js استفاده میکنم. برای توسعه بک اند از Node.js, Express.js, MongoDB, MongoDB استفاده میکنم.
+                  <Typography component='p' variant='body1'>من توسعه دهنده فول استک علاقه مند به ساخت نرم افزارهای Scalabale و کاربردی هستم. برای توسعه فرانت از React.js, Next.js, Gatsby.js استفاده میکنم. برای توسعه بک اند از Node.js, Express.js, MongoDB, MySQL استفاده میکنم.
                   </Typography>
                 </Collapse>
               </CardContent>

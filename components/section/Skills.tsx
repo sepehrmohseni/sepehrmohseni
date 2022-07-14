@@ -55,7 +55,7 @@ const Skills: React.FunctionComponent<SkillsProps> = (props) => {
         />
       ),
       title: 'JS & TS',
-      progressValue: 95,
+      progressValue: 98,
     },
     {
       Icon: (
@@ -67,8 +67,8 @@ const Skills: React.FunctionComponent<SkillsProps> = (props) => {
           }}
         />
       ),
-      title: 'Front-End (React.js, Next.js, Gatsby.js)',
-      progressValue: 90,
+      title: 'React.js, Next.js, Gatsby.js',
+      progressValue: 95,
     },
     {
       Icon: (
@@ -80,8 +80,8 @@ const Skills: React.FunctionComponent<SkillsProps> = (props) => {
           }}
         />
       ),
-      title: 'Back-End (Node.js, Express.js, MongoDB, MySQL)',
-      progressValue: 83,
+      title: 'Node.js, Express.js, MongoDB, MySQL',
+      progressValue: 92,
     },
     // {
     //   Icon: (

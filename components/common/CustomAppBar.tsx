@@ -88,7 +88,7 @@ const CustomAppBar: React.FunctionComponent<CustomAppBarProps> = (props) => {
             <NameLogo
               bgColor={'#232526'}
               color={grey[300]}
-              name='sepehrmohseni.com'
+              name='sepehrmohseni'
               onClick={() => router.push('/')}
             />
 

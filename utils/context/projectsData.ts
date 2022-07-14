@@ -52,7 +52,7 @@ const projectsData: Project[] = [
     ProjectConstructor({
         title: 'Sepehr Mohseni',
         summary: "وبسایت شخصی",
-        url: "https://sepehrmohseni.com",
+        url: "https://sepehrmohseni.vercel.app/",
         stack: ['TypeScript', 'Next.js']
     }),
 ];
